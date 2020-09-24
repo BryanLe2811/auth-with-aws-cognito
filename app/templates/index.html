@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div>
+        {% if current_user.is_anonymous %}
+        <h3>Welcome to BryanTech sample project</h3>
+        {%else%}
+        <h3>You have successfully Signed In</h3>
+        {%endif%}
+        <p>Connect with Bryan on his website or GitHub</p>
+        <ul>
+            <li><a href="https://www.bryantech.me/">Bryan's Website</a></li>
+            <li><a href="https://github.com/BryanLe2811">Bryan's GitHub</a></li>
+        </ul>
+    </div>
+{% endblock %}
